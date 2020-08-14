@@ -23,7 +23,7 @@
     {{- if eq $order_by "title" -}}
       {{- $query = .Site.Home.Sections.ByTitle -}}
     {{- else if eq $order_by "title_desc" -}}
-      {{- $query = .Site.Home.Sections.ByTitle.Reverse  -}}
+      {{- $query = .Site.Home.Sections.ByTitle.Reverse -}}
     {{- else -}}
       {{- $query = .Site.Home.Sections.ByWeight -}}
     {{- end}}
