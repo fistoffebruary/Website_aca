@@ -1,0 +1,20 @@
+{{ partial "head" . }}
+  <body>
+    <div id="wrap">
+      {{ partial "header" . }}
+      <section id="about">
+        <div class="container">
+        <div class="avatar">
+          <img class="img-circle" src="{{ .Site.BaseURL }}img/{{ .Site.Params.avatar }}" alt="Responsive image">
+        </div>
+        <h3>I'm {{ .Site.Params.author }}, a Bioinformatician, Pre-Medical Student, and Photographer in Austin, Texas.</h3>
+        <h3>Check out some of my <a href="{{ .Site.BaseURL }}projects/"> projects</a>.</h3>
+        <h3>To learn more about me, check out my   <a href="resume.pdf" target="_blank">CV</a>.</h3>
+        <h3>Contact me at <a href="{{ .Site.Params.Social.Phone }}">{{ .Site.Params.Social.Phone }}</a> or by <a href="mailto:{{ .Site.Params.Social.Email }}">email</a>.</h3>
+        {{ partial "social.html" . }}
+        </div>
+      </section>
+    </div>
+    {{ partial "footer" . }}
+  </body>
+</html>
